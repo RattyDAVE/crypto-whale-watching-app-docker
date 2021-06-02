@@ -26,7 +26,7 @@ RUN git clone https://github.com/pmaji/crypto-whale-watching-app.git
 # install dependencies:
 RUN pip install -r requirements.txt
 
-EXPORT 8050
+EXPOSE 8050
 
 # set new working dir to 
 WORKDIR ${VIRTUAL_ENV}/crypto-whale-watching-app
