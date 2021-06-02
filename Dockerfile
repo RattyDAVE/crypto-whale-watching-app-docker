@@ -14,7 +14,7 @@ ENV VIRTUAL_ENV=/opt/crypto_app
 ##    apt-get install -y \
 ##    git-all 
 
-RUN pkg add git && \
+RUN apk add git && \
     cd $VIRTUAL_ENV && \
     git clone https://github.com/pmaji/crypto-whale-watching-app.git && \
     cd crypto-whale-watching-app && \
