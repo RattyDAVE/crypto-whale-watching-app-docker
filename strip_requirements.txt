@@ -1,0 +1,8 @@
+dash
+plotly
+pandas
+numpy
+colorama
+python-dateutil
+cbpro
+DateTime
