@@ -6,7 +6,8 @@ RUN apk add git && \
     git clone https://github.com/pmaji/crypto-whale-watching-app.git
 
 ADD strip_requirements.txt crypto-whale-watching-app/
-    cd crypto-whale-watching-app && \
+
+RUN cd crypto-whale-watching-app && \
     pip install -r strip_requirements.txt
 
 EXPOSE 8050
