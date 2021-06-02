@@ -10,7 +10,12 @@ RUN apk add git && \
 #RUN cd crypto-whale-watching-app && \
 #    pip install -r strip_requirements.txt
 
-RUN cd crypto-whale-watching-app && \
+#MarkupSafe==1.0
+#MarkupSafe==1.1.0
+
+
+RUN cd /root/crypto-whale-watching-apppip  && \
+    sed -i s/MarkupSafe==1.0/MarkupSafe==1.1.0/ requirements.txt && \
     pip install -r requirements.txt
 
 EXPOSE 8050
