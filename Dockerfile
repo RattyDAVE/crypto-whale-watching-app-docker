@@ -14,7 +14,7 @@ RUN apk add git && \
 #MarkupSafe==1.1.0
 
 
-RUN cd /root/crypto-whale-watching-apppip  && \
+RUN cd /root/crypto-whale-watching-app  && \
     sed -i s/MarkupSafe==1.0/MarkupSafe==1.1.0/ requirements.txt && \
     pip install -r requirements.txt
 
