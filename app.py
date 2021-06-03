@@ -90,6 +90,7 @@ E_GDAX = Exchange("GDAX", [
                            "BTC-GBP", "BTC-USD", "BTC-EUR",
                            "ETH-GBP", "ETH-USD", "ETH-EUR", "ETH-BTC",
                            "ADA-GBP", "ADA-USD", "ADA-EUR", "ADA-BTC",
+                           "CRO-GBP", "CRO-USD", "CRO-EUR", "CRO-BTC",
                            "LTC-USD", "LTC-EUR", "LTC-BTC",
                            "BCH-USD", "BCH-EUR", "BCH-BTC"], 0)
 for ticker in E_GDAX.ticker:
