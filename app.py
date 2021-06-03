@@ -87,8 +87,9 @@ class Pair:
 
 PAIRS = []  # Array containing all pairs
 E_GDAX = Exchange("GDAX", [
-                           "ETH-USD", "ETH-EUR", "ETH-BTC",
-                           "BTC-USD", "BTC-EUR", "BTC-GBP",
+                           "BTC-GBP", "BTC-USD", "BTC-EUR",
+                           "ETH-GBP", "ETH-USD", "ETH-EUR", "ETH-BTC",
+                           "ADA-GBP", "ADA-USD", "ADA-EUR", "ADA-BTC",
                            "LTC-USD", "LTC-EUR", "LTC-BTC",
                            "BCH-USD", "BCH-EUR", "BCH-BTC"], 0)
 for ticker in E_GDAX.ticker:
@@ -364,6 +365,12 @@ static_content_before = [
         "See GitHub link above for further details."
         ])
 ]
+
+
+static_content_before = [
+]
+
+
 cCache = []
 for pair in PAIRS:
     ticker = pair.ticker
