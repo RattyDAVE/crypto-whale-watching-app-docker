@@ -13,8 +13,9 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 # update/upgrade and install git
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y \
-    git-all
+    apt-get install -y
+    
+#    git-all
 
 # make active dir for git install
 WORKDIR $VIRTUAL_ENV
