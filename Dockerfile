@@ -1,4 +1,5 @@
-FROM python:3.6.5-slim
+#FROM python:3.6.5-slim
+FROM python:slim
 
 # setup virtual env vars
 ENV VIRTUAL_ENV=/opt/crypto_app
